@@ -169,7 +169,7 @@
         }
         #section_chua_slogan{
             padding-top: clamp(1px, 14vw, 100px);
-            width: 55vw;
+            width: 56vw;
             padding-right: 0.5rem;
             margin-right: 1vw;
             
@@ -195,42 +195,80 @@
             color: #f5576c;
         
         }
+       
 
         #section_chua_slogan h2{
             display: inline-block;
             font-family: "Noto Sans", sans-serif;
             font-weight: 300;
             font-size: clamp(1px, 2.5vw, 100px) ;
-            padding-left:15vw ;
+            padding-left:13vw ;
             color:#718096;
+
+        }
+         #section_chua_slogan h3{
+            display: inline-block;
+            font-family: "Noto Sans", sans-serif;
+            font-weight: 300;
+            font-size: clamp(1px, 2vw, 20px) ;
+            padding-left:2vw ;
+            color:#a8bfe2;
 
         }
 
         .container_slogan {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(383px, 1fr));
         
         }
         
         .slogan {
+            
             animation: slide_l_r 0.5s ease-in forwards;
             top: 10px;
-            max-width: 700px;
+            max-width: 800px;
             margin: 10px;
-            font-family: "Playpen Sans", cursive;
-            font-size: clamp(1px, 3vw, 26px) ;
-            color: #bed9e7;
             transition: transform 0.3s ease, filter 0.3s ease;
         
         
         }
+        .slogan a{
+            text-decoration: none;
+            font-family: "Playpen Sans", cursive;
+            font-size: clamp(1px, 2.8vw, 24px) ;
+            color: #bed9e7;
+        }
         
-        .slogan:hover {
+        .slogan:hover a{
             font-style: italic;
             color: #f56b6b;
         }
+         .icon{
+            width: 2vw;
+            fill: #00f2fe;
+            
+        }
+        .slogan:hover .icon {
+            font-style: italic;
+            fill: #f56b6b;
+        }
+
 
         #infor{
+            width: 55vw;
+            padding-left: 1rem !important;
+            padding: 0.5rem;
+            margin-right: 1vw;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            
+            margin-bottom: 3vh;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+         #aboutme{
             width: 55vw;
             padding-left: 1rem !important;
             padding: 0.5rem;

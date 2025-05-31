@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <title>
+            Binhweb
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/trangchu_style.css">
+        <link rel="stylesheet" href="css/media_query.css">
+        <link rel="icon" href="resources/images/logo/L_weblogo.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/v4-shims.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/v5-font-face.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/v6-font-face.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/v7-font-face.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Comic+Relief:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato&family=Noto+Sans:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&family=Playpen+Sans:wght@100..800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    
+    </HEAD>
+
+
+    <body>
+        <div class="nav">
+            <a href="index.html"><img src="resources/images/logo/L_weblogo.png" alt="weblogo"></a>
+            <a href=#infor class="link">Thông tin</a>
+            <a href="#khotailieu" class="link">Kho tài liệu</a>
+            <a href="#aboutme" class="link">aboutme</a>
+        </div>
+        <div id="sidebar">
+            <div id="sidebarhead">
+                Điều hướng nhanh
+            </div>
+            <a href="#infor">Thông tin</a>
+            <a href="#khotailieu">Kho tài liệu</a>
+            <a href="#aboutme">aboutme</a>
+        </div>
+        <div id="maincontainer">
+            
+
+            <div id="section_chua_slogan">
+             <!--   <img src="resources/images/logo/L_weblogo.png" alt="weblogo"> -->
+                <div id="title">
+                    Binhweb
+                </div>
+                <h2>
+                    Trang web học tập do qb phát triển
+                </h2>
+                <h3>
+                    *Được phát triển với mục đích chia sẽ thông tin và tài liệu liên quan đến kì thi thptqg
+                    <br>
+                    *Tài liệu do qb tìm được, hoặc do người khác đóng góp
+                    <br>
+                    *Bạn cũng có thể đóng góp thông qua thư mục drive sau: 
+                    <a href="https://drive.google.com/drive/folders/1GV4PtBNO57gS5QvxNYvKBt6uPMKlbXlL?usp=drive_link">
+                    <svg role="img" class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Google Drive</title><path d="M12.01 1.485c-2.082 0-3.754.02-3.743.047.01.02 1.708 3.001 3.774 6.62l3.76 6.574h3.76c2.081 0 3.753-.02 3.742-.047-.005-.02-1.708-3.001-3.775-6.62l-3.76-6.574zm-4.76 1.73a789.828 789.861 0 0 0-3.63 6.319L0 15.868l1.89 3.298 1.885 3.297 3.62-6.335 3.618-6.33-1.88-3.287C8.1 4.704 7.255 3.22 7.25 3.214zm2.259 12.653-.203.348c-.114.198-.96 1.672-1.88 3.287a423.93 423.948 0 0 1-1.698 2.97c-.01.026 3.24.042 7.222.042h7.244l1.796-3.157c.992-1.734 1.85-3.23 1.906-3.323l.104-.167h-7.249z"/></svg>                </h3>
+                    </a>
+                <h3>
+                    Liên hệ với qb:
+                </h3>
+                <div class="container_slogan">
+                    <div class="slogan">
+                        <a href="https://www.facebook.com/share/1Ef4wx1HrF/">
+                        <svg class="icon"  role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>                        
+                        Trần Quang Bình
+                        </a>
+                    </div>
+                    <div class="slogan">
+                        <a href="https://github.com/dev-kh-bt-code">
+                        <svg  class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>                        
+                        dev-kh-bt-code
+                        </a>
+                    </div>
+                    <div class="slogan">
+                        <a href="#">
+                        <svg  class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>                        
+                        quangbinh070408@gmail.com
+                        </a>
+                    </div>
+                    
+                    <br><br><br>
+                </div>
+
+            </div> 
+            <div id="infor">
+                <h2>
+                    Đây là nơi chứa thông tin kì thi thptqg
+                    (chưa làm)
+                </h2>
+            </div> 
+            <div id="khotailieu">
+                <div id="math">
+                    <h2 class="subject-title-math">
+                        <i class="fas fa-calculator"></i>
+                        Toán học
+                    </h2>
+                    <div class="khotailieu_grid">
+                        <div class="khotailieu_card">
+                            <div class="chuaimg">
+                                <a href="">
+                                    <img class="img" src="resources/images/main/T_duc.png" alt="Đức">
+                                    
+                            </div>
+                            <h2>
+                                    Đỗ Văn Đức
+                                </h2>
+                            </a>
+                        </div>
+                        <div class="khotailieu_card">
+                            <a href="">
+                                <img class="img" src="resources/images/main/T_vuong.png" alt="Vương">
+                                <h2>
+                                    Nguyễn Bảo Vương
+                                </h2>
+                            </a>
+                        </div>
+                        <div class="khotailieu_card">
+                            <a href="">
+                                <img class="img" src="resources/images/main/T_khac.png" alt="Khác">
+                                <h2>
+                                    Khác
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="math">
+                    <h2 class="subject-title-math">
+                        <i class="fas fa-atom subject-icon"></i>
+                        Vật lý
+                    </h2>
+                    <div class="khotailieu_grid">
+                        <div class="khotailieu_card">
+                            <div class="chuaimg">
+                                <a href="">
+                                    <img class="img" src="resources/images/main/L_anh.png" alt="Anh">
+                                    
+                            </div>
+                            <h2>
+                                    Vũ Ngọc Anh
+                                </h2>
+                            </a>
+                        </div>
+                        <div class="khotailieu_card">
+                            <a href="">
+                                <img class="img" src="resources/images/main/L_khac.png" alt="Khác">
+                                <h2>
+                                    Khác
+                                </h2>
+                            </a>
+                        </div>
+                        <div class="khotailieu_card">
+                            <a href="">
+                                <img class="img" src="resources/images/main/T_khac.png" alt="Khác">
+                                <h2>
+                                    Khác
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="math">
+                    <h2 class="subject-title-math">
+                        <i class="fas fa-flask subject-icon"></i>
+                        Hoá học
+                    </h2>
+                    <div class="khotailieu_grid">
+                        <div class="khotailieu_card">
+                            <div class="chuaimg">
+                                <a href="">
+                                    <img class="img" src="resources/images/main/H_trong.png" alt="Trọng">
+                                    
+                            </div>
+                            <h2>
+                                    Phạm Văn Trọng
+                                </h2>
+                            </a>
+                        </div>
+                        <div class="khotailieu_card">
+                            <a href="">
+                                <img class="img" src="resources/images/main/H_thang.png" alt="Thắng">
+                                <h2>
+                                    Phạm Thắng
+                                </h2>
+                            </a>
+                        </div>
+                        <div class="khotailieu_card">
+                            <a href="">
+                                <img class="img" src="resources/images/main/H_khac.png" alt="Khác">
+                                <h2>
+                                    Khác
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="aboutme">
+                <h2>
+                    Đây là nơi chứa thông tin về qb
+                    (chưa làm)
+                </h2>
+        </div>
+             
+    </body>
+</HTML>
+
+
+
+
+
+
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --dark-gradient: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --text-primary: #2d3748;
+            --text-secondary: #718096;
+            --shadow-light: 0 0px 10px rgba(23, 9, 146, 0.1);
+            --shadow-medium: 0 0px 40px rgba(90, 80, 148, 0.15);
+            --shadow-heavy: 0 0px 60px rgba(138, 155, 209, 0.25);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            padding-right: 5px;
+            font-family: 'Inter', sans-serif; 
+            background-image: linear-gradient(135deg, #000000d5 0%, #31122ae3 50%, #050d24da 100%), url(/resources/images/background/b_trangchu_body_3.svg);
+            background-size: 100vw;
+           
+            background-color: #12141a;
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+
+        .nav{
+            padding-top: 3px;
+            padding-bottom:5px;
+            padding-right: 3px;
+            position: fixed;
+            height: 5vh;
+            background: rgba(61, 22, 167, 0.164);
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            backdrop-filter: blur(20px);
+        }
+
+        .nav a img{
+            margin-left: 1vw;
+            height: 100%;
+            transition: filter 0,2s;
+        }
+        .nav a img:hover{
+            filter: brightness(120%);
+        }
+        .link{
+            float: right;
+            margin-left: 2vw;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 0.5rem 1rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.5rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        .link::before{
+            content: "";
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: -50%;
+            top: 0;
+            opacity: 0;
+            transition: left 0.5s;
+        }
+        .link:hover::before{
+            opacity: 1;
+            left: 0;
+        }
+        .link:hover{
+            box-shadow: var(--shadow-medium);
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 18px;
+        }
+        #sidebar{
+            width: 30vw;
+            height: 70vh;
+            margin-left: 2vw;
+            background: #161821;
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 0.5rem;
+            padding-top:0;
+            z-index: 1000;
+            position: fixed;
+            top: 70px;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
+        #sidebar:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+            border: 1px solid rgba(245, 245, 245, 0.849);
+        }
+
+        #sidebarhead{
+
+            height: 2vh;
+            margin-top:15px;
+            margin-left:5px;
+            font-size: 3vw;
+            font-weight: 700;
+            color: #4facfe;
+            display: flex;
+            align-items: center;
+
+
+        }
+        #sidebar a {
+            display: flex;
+            align-items: center;
+            margin-top: 1.5vw;
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        #sidebar a::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-gradient);
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+        #sidebar a:hover::before{
+            left: 0;
+        }
+        #maincontainer{
+
+            position: relative;
+            padding-left:15px;
+            padding-top: 6.4vh;
+            width: 50vw;
+            margin-left: 35vw;
+
+            padding-right: 15px;
+            
+        }
+        #section_chua_slogan{
+            padding-top: clamp(1px, 14vw, 100px);
+            width: 56vw;
+            padding-right: 0.5rem;
+            margin-right: 1vw;
+            
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            background-image:linear-gradient(-225deg, #10294dc9, #060f1bc0), url(../resources/images/background/b_trangchu_hoc.png);
+            background-size: cover;
+            background-attachment: fixed;
+            height: fit-content;
+            overflow: hidden;
+            margin-bottom: 3vh;
+
+        }
+
+        #title{
+
+            display: block;
+            position: absolute;
+            top: 5vh;
+            left: 9vw;
+            font-family: "Baloo Bhai 2", sans-serif;
+            font-size: clamp(1px, 13vw, 100px);
+            color: #f5576c;
+        
+        }
+       
+
+        #section_chua_slogan h2{
+            display: inline-block;
+            font-family: "Noto Sans", sans-serif;
+            font-weight: 300;
+            font-size: clamp(1px, 2.5vw, 100px) ;
+            padding-left:13vw ;
+            color:#718096;
+
+        }
+         #section_chua_slogan h3{
+            display: inline-block;
+            font-family: "Noto Sans", sans-serif;
+            font-weight: 300;
+            font-size: clamp(1px, 2vw, 20px) ;
+            padding-left:2vw ;
+            color:#a8bfe2;
+
+        }
+
+        .container_slogan {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(383px, 1fr));
+        
+        }
+        
+        .slogan {
+            
+            animation: slide_l_r 0.5s ease-in forwards;
+            top: 10px;
+            max-width: 800px;
+            margin: 10px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        
+        
+        }
+        .slogan a{
+            text-decoration: none;
+            font-family: "Playpen Sans", cursive;
+            font-size: clamp(1px, 2.8vw, 24px) ;
+            color: #bed9e7;
+        }
+        
+        .slogan:hover a{
+            font-style: italic;
+            color: #f56b6b;
+        }
+         .icon{
+            width: 2vw;
+            fill: #00f2fe;
+            
+        }
+        .slogan:hover .icon {
+            font-style: italic;
+            fill: #f56b6b;
+        }
+
+
+        #infor{
+            width: 55vw;
+            padding-left: 1rem !important;
+            padding: 0.5rem;
+            margin-right: 1vw;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            
+            margin-bottom: 3vh;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+         #aboutme{
+            width: 55vw;
+            padding-left: 1rem !important;
+            padding: 0.5rem;
+            margin-right: 1vw;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            
+            margin-bottom: 3vh;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        #math{
+            padding-left: 1rem !important;
+            width: 55vw;
+            padding: 0.5rem;
+            margin-right: 1vw;
+            background: #151923c9;
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            
+            margin-bottom: 3vh;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
+        #math:hover{
+            box-shadow: var(--shadow-medium);
+
+            border: 1px solid rgba(188, 176, 243, 0.849);
+        }
+        .subject-title-math{
+            background: linear-gradient(135deg, #f53e45 0%, #e95cbc 20%, #fecfef 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: clamp(14px,7vw,60px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+ 
+
+        }
+        #math:hover .subject-title-math{
+            background: linear-gradient(135deg, #f53e45 0%, #e95cbc 70%, #fecfef 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+           
+        }
+        .khotailieu_grid{
+            gap: 2rem;
+            display: grid;
+            grid-template-columns:repeat(auto-fit,minmax(100px,200px));
+        }
+        .khotailieu_card{
+            background-color: #00f2fe !important;
+            /*background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)), url(/resources/images/background/b_hoa_trang.png);*/
+            background-size: 100%;
+            margin-right: 50px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+            width: 100%;
+            height: fit-content;
+        }
+        .khotailieu_card h2{
+            font-size: clamp(1px, 3vw, 16px) ;
+            color: #00f1fed2;
+            padding: 0.4rem;
+            margin-left: 0;
+            
+            margin-right: 0;
+            margin-bottom: 0;
+            display:flexbox;
+            text-decoration: none;
+            background-color: #2d3748;
+        }
+        .img{
+            width: 95%;
+            transition:  0.3s ease;
+
+        }
+
+        .khotailieu_card::before{
+            content: '';
+            border-radius: 50%;
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            transition:  0.3s ease;
+            z-index: -1;
+        }
+        .khotailieu_card:hover::before {
+            top: 0;
+            left: 0;
+            background: linear-gradient(135deg, #f53e45 0%, #e95cbc 50%, #fecfef 100%);
+            border-radius: 0;
+           
+        }
+        .khotailieu_card:hover {
+            border-top: #00f2fe 3px solid;
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: var(--shadow-heavy);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        .khotailieu_card:hover .img{
+            justify-self: center;
+            width: 110%;
+            filter: drop-shadow(5px 5px 10px rgba(39, 37, 48, 0.87));
+        }
+     
+
+@media (max-width: 640px) {
+    #sidebar{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    #maincontainer{
+        width: 90vw;
+        margin-left: 5vw;     
+        }
+    #section_chua_slogan{
+            
+            width: 80vw;
+        }
+     #section_chua_slogan h2{
+            
+            font-size: clamp(1px, 4vw, 100px) ;
+
+        }
+    .slogan a{
+            font-size: clamp(1px, 4vw, 50px) ;
+           
+        }
+    .icon{
+            width: 4vw;
+            fill: #00f2fe;
+            
+        }
+     #infor{
+            width: 80vw;
+            padding-left: 0.3rem !important;
+            font-size: 1.5vw;
+            
+        }
+     #aboutme{
+            width: 80vw;
+            padding-left: 0.3rem !important;
+            font-size: 1.5vw;
+        }
+    #math{
+            width: 80vw;
+            padding-left: 0.3rem !important;
+            justify-items: center;
+
+        }
+    .subject-title-math{
+            font-size: clamp(14px,10vw,60px);
+        
+        }
+
+        
+
+    
+
+
+}

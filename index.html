@@ -5,8 +5,9 @@
             Binhweb
         </title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="css/trangchu_style.css">
+        <link rel="stylesheet" href="css/media_query.css">
         <link rel="icon" href="resources/images/logo/L_weblogo.png" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -29,16 +30,16 @@
         <div class="nav">
             <a href="index.html"><img src="resources/images/logo/L_weblogo.png" alt="weblogo"></a>
             <a href=#infor class="link">Thông tin</a>
-            <a href="#" class="link">Kho tài liệu</a>
-            <a href="#" class="link">aboutme</a>
+            <a href="#khotailieu" class="link">Kho tài liệu</a>
+            <a href="#aboutme" class="link">aboutme</a>
         </div>
         <div id="sidebar">
             <div id="sidebarhead">
-                Tuỳ chọn nhanh
+                Điều hướng nhanh
             </div>
             <a href="#infor">Thông tin</a>
-            <a href="#">Kho tài liệu</a>
-            <a href="#">aboutme</a>
+            <a href="#khotailieu">Kho tài liệu</a>
+            <a href="#aboutme">aboutme</a>
         </div>
         <div id="maincontainer">
             
@@ -51,32 +52,38 @@
                 <h2>
                     Trang web học tập do qb phát triển
                 </h2>
+                <h3>
+                    *Được phát triển với mục đích chia sẽ thông tin và tài liệu liên quan đến kì thi thptqg
+                    <br>
+                    *Tài liệu do qb tìm được, hoặc do người khác đóng góp
+                    <br>
+                    *Bạn cũng có thể đóng góp thông qua thư mục drive sau: 
+                    <a href="https://drive.google.com/drive/folders/1GV4PtBNO57gS5QvxNYvKBt6uPMKlbXlL?usp=drive_link">
+                    <svg role="img" class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Google Drive</title><path d="M12.01 1.485c-2.082 0-3.754.02-3.743.047.01.02 1.708 3.001 3.774 6.62l3.76 6.574h3.76c2.081 0 3.753-.02 3.742-.047-.005-.02-1.708-3.001-3.775-6.62l-3.76-6.574zm-4.76 1.73a789.828 789.861 0 0 0-3.63 6.319L0 15.868l1.89 3.298 1.885 3.297 3.62-6.335 3.618-6.33-1.88-3.287C8.1 4.704 7.255 3.22 7.25 3.214zm2.259 12.653-.203.348c-.114.198-.96 1.672-1.88 3.287a423.93 423.948 0 0 1-1.698 2.97c-.01.026 3.24.042 7.222.042h7.244l1.796-3.157c.992-1.734 1.85-3.23 1.906-3.323l.104-.167h-7.249z"/></svg>                </h3>
+                    </a>
+                <h3>
+                    Liên hệ với qb:
+                </h3>
                 <div class="container_slogan">
                     <div class="slogan">
-                        <img src="https://cdn.simpleicons.org/facebook/ffffff" width="32">
+                        <a href="https://www.facebook.com/share/1Ef4wx1HrF/">
+                        <svg class="icon"  role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>                        
                         Trần Quang Bình
+                        </a>
                     </div>
                     <div class="slogan">
-                        <img src="https://cdn.simpleicons.org/github/ffffff" width="32">
-                        Trần Quang Bình
+                        <a href="https://github.com/dev-kh-bt-code">
+                        <svg  class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>                        
+                        dev-kh-bt-code
+                        </a>
                     </div>
                     <div class="slogan">
-                        🔥Học như thể đó là cách duy nhất để m tồn tại
+                        <a href="#">
+                        <svg  class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>                        
+                        quangbinh070408@gmail.com
+                        </a>
                     </div>
-                    <div class="slogan">
-                        🔥Từ bỏ à, cút xéo vì cuộc đua này kh dành cho kẻ lười biến </div>
-                    <div class="slogan">
-                        🔥Đã học thì phải đổ nv1
-                    </div>
-                    <div class="slogan">
-                        🔥m ngu? hãy học để thông minh
-                    </div>
-                    <div class="slogan">
-                        🔥m thấy cuộc sống nhạt nhẽo? hãy học để try hard
-                    </div>
-                    <div class="slogan">
-                        🔥m muốn sống như “người bình thường” hãy nhớ “chỉ có lủ khỉ ms kh học”
-                    </div>
+                    
                     <br><br><br>
                 </div>
 
@@ -195,6 +202,11 @@
                 </div>
                 
             </div>
+            <div id="aboutme">
+                <h2>
+                    Đây là nơi chứa thông tin về qb
+                    (chưa làm)
+                </h2>
         </div>
              
     </body>
