@@ -23,7 +23,7 @@
         body {
             padding-right: 5px;
             font-family: 'Inter', sans-serif; 
-            background-image: linear-gradient(135deg, #000000d5 0%, #31122ae3 50%, #050d24da 100%), url(/resources/images/background/b_trangchu_body_3.svg);
+            background-image: linear-gradient(135deg, #000000d5 0%, #31122ae3 50%, #050d24da 100%), url(../resources/images/background/b_trangchu_body_3.svg);
             background-size: 100vw;
            
             background-color: #12141a;
