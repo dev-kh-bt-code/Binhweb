@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LX3SRKTXH1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LX3SRKTXH1');
+</script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Binhweb_thptqg_chemistry</title>
+    <link rel="stylesheet" href="css/H_Trong.css">
+    <link rel="stylesheet" href="css/media query.css">
+    <link rel="icon" href="resource/images/logo.png" type="images/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Comic+Relief:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato&family=Noto+Sans:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&family=Playpen+Sans:wght@100..800&display=swap"
+        rel="stylesheet">
+<style>
+@keyframes slide_l_r {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 5vh;
+    padding: 5px;
+    background-color: #1f3546;
+}
+
+.nav img {
+    height: 100%;
+    float: left;
+}
+
+.nav a {
+    display: inline-block;
+    float: right;
+    box-sizing: border-box;
+    font-size: 2vh;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+
+    color: #9ebccb;
+    transition: 0.15s ease-in;
+}
+
+.nav a:hover {
+    color: #cce6f3;
+    font-size: 2.1vh;
+
+
+}
+
+#section1 {
+    background-image: linear-gradient(-225deg, #00000000, #15436e), url(../resource/images/p_H_Trong/b_1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+    padding-top: 7vh;
+
+
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.chuaimg {
+    max-width: 400px;
+
+}
+
+.img_trong {
+    width: 100%;
+}
+
+.title {
+    font-family: "Playpen Sans", cursive;
+    font-weight: bold;
+    font-size: 29px;
+    text-align: center;
+    color: #e7e4e1;
+}
+
+.chua2container {
+    align-items: center;
+}
+
+.chuabutton {
+    margin-top: 15px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.button {
+    display: flex;
+    box-sizing: border-box;
+    color: #e7e4e1;
+    background-color: #ef436d;
+    width: 110px;
+    height: 50px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 10px;
+    text-decoration: none;
+    transition: all 0.15s ease-in;
+}
+
+.button:hover {
+    background-color: #ff5680;
+    box-shadow: 5px 5px 25px 10px #ffd3de3b;
+    transform: scale(1.05);
+}
+
+.chualink {
+    margin-top: 20px;
+}
+
+.link {
+    margin-top: 15px;
+    margin-left: 10px;
+    display: block;
+    font-family: "Playpen Sans", cursive;
+    text-decoration: none;
+    font-size: 26px;
+    color: #a198c9;
+    transition: all 0.25s ease-in;
+}
+
+.link:hover {
+    color: white;
+    transform: scale(1.01);
+
+}
+
+.logo {
+    width: 27px;
+    margin-right: 5px;
+
+}
+
+#section2 {
+    background-image: url(../resource/images/p_trangchu/background_chua_link.png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content;
+
+}
+
+.cotainerchualist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.st2_title {
+    font-family: "Playpen Sans", cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: #d7495b;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.layer1 {
+
+    margin: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: #a198c944;
+    border-radius: 25px;
+    border: #a198c9dc solid 2px;
+    font-family: "Playpen Sans", cursive;
+    color: #bc9f8f;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    padding-left: 20px;
+    transition: 0.25s ease-in;
+}
+
+.layer1:hover {
+    transform: scale(1.03);
+}
+
+.layer2 {
+    margin-top: 15px;
+    background-color: #e4904b44;
+    border: #bc9f8f solid 1px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #5e4c438c;
+    font-family: "Playpen Sans", cursive;
+    color: #5e4c43;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.layer3 {
+    font-family: "Playpen Sans", cursive;
+    color: #312823;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.layer3:hover {
+    border: #260761 solid 1px;
+    border-radius: 15px;
+    color: #4033b6;
+}
+
+.layer4 {
+    font-family: "Noto Sans", cursive;
+    color: #000000;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.layer4:hover {
+    border: #220570 solid 1px;
+    color: #ea00ff;
+    border-radius: 15px;
+}
+
+.layer4 li {
+    font-family: "Noto Sans", cursive;
+    color: #6a44d3;
+    font-size: 15px;
+    font-weight: normal;
+
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.layer3 a {
+    text-decoration: none;
+    transition: 0.25s ease-in;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.layer3 a:hover {
+    color: #fdfdfd;
+    transform: translateX(10px);
+}
+
+#section3 {
+    margin-top: 0;
+    background-image: url(../resource/images/p_H_Trong/b_2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+}
+
+.section3-title {
+    margin-top: 10px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: bold;
+    color: #026937;
+    font-size: 47px;
+    place-self: center;
+}
+
+.container_chua_card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+}
+
+.card {
+    max-width: 500px;
+    background-color: #00bf63;
+    border: #02693760 solid 4px;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    padding-bottom: 3px;
+    transition: 0.25s ease-in;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.icon-hoa {
+    display: inline-block;
+    height: 30px;
+
+}
+
+.card_title {
+
+    margin-left: 30px;
+    display: inline-block;
+    padding-bottom: 0px;
+    font-family: "Playpen Sans", cursive;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.box {
+    display: block;
+    height: 3px;
+    width: 75%;
+    background-color: white;
+    justify-self: center;
+}
+
+.card_chua_button {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    justify-content: center;
+    place-content: center;
+}
+
+.card_button {
+    display: inline-block;
+    background-color: white;
+    border-radius: 6px;
+    place-self: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    color: #00bf63;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    width: 70px;
+    transition: 0.2s ease-in;
+}
+
+.card_button:hover {
+    border-radius: 15px;
+    color: #086136;
+}
+
+/*  --------------------------------------tong on hoa vo co */
+.section3-title2 {
+    margin-top: 10px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: bold;
+    color: #074e72;
+    font-size: 47px;
+    place-self: center;
+}
+
+.icon-hoa2 {
+    display: inline-block;
+    height: 15px;
+
+}
+
+.container_chua_card2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.card2 {
+    max-width: 200px;
+    box-shadow: 3px 3px 10px 3px rgba(52, 11, 117, 0.377);
+    background-color: #0a8acb;
+    border: #073c577e solid 4px;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    padding-bottom: 3px;
+    transition: 0.25s ease-in;
+}
+
+.card2:hover {
+    transform: scale(1.05);
+}
+
+.card_title2 {
+    display: inline-block;
+    padding-bottom: 0px;
+    font-family: "Playpen Sans", cursive;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.box2 {
+    display: block;
+    height: 3px;
+    width: 75%;
+    background-color: white;
+    justify-self: center;
+}
+
+.card_chua_button2 {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    justify-content: center;
+    place-content: center;
+}
+
+.card_button2 {
+    display: inline-block;
+    background-color: white;
+    border-radius: 6px;
+    place-self: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.5vw;
+    color: #0a8acb;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    width: 70px;
+    transition: 0.2s ease-in;
+}
+
+.card_button2:hover {
+    border-radius: 15px;
+    color: #074361;
+}
+
+/*-----------------------------------------section4*/
+#section4 {
+    margin-top: 0;
+    background-image: linear-gradient(-225deg, rgba(255, 255, 255, 0.596) 25%, rgba(107, 121, 252, 0.733)), url(../resource/images/p_H_Trong/b_4.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+}
+
+.section4-title {
+    text-shadow: 5px 5px 20px #76ff05, -3px -7px 20px #f50606;
+    margin-top: 10px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 47px;
+    place-self: center;
+}
+
+.container_chua_card4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card4 {
+    max-width: 500px;
+    background-image: linear-gradient(#154abd9c, #0d158683);
+    border: #13034da4 solid 4px;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    padding-bottom: 3px;
+    transition: 0.25s ease-in;
+}
+
+.card4:hover {
+    background-image: linear-gradient(#93abe0, #5c66ff);
+    box-shadow: 5px -5px 15px 10px rgba(2, 25, 66, 0.527);
+    transform: scale(1.05);
+    border: #ffffff solid 4px;
+
+}
+
+.icon-hoa4 {
+    display: inline-block;
+    height: 30px;
+
+}
+
+.card_title4 {
+
+    margin-left: 30px;
+    display: inline-block;
+    padding-bottom: 0px;
+    font-family: "Playpen Sans", cursive;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.box {
+    display: block;
+    height: 3px;
+    width: 75%;
+    background-color: white;
+    justify-self: center;
+}
+
+.card_chua_button4 {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    justify-content: center;
+    place-content: center;
+}
+
+.card_button4 {
+    display: inline-block;
+    background-color: white;
+    border-radius: 6px;
+    place-self: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    color: #0a18dbe0;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    width: 70px;
+    transition: 0.2s ease-in;
+}
+
+.card_button4:hover {
+    border-radius: 15px;
+    color: #0a1068ea;
+}
+</style>
+
+</head>
+
+<body>
+    <!------------------------------------------------------nav------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------------>
+    <div class="nav">
+        <img src="resource/images/logo.png" alt="logo">
+        <a href="#section4">THPT QG </a>
+
+        <a href="#section3">Tổng ôn</a>
+        <a href="#section2">CT-12</a>
+        <a href="index.html">Trang chủ</a>
+    </div>
+
+    <!------------------------------------------------------section1------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------------>
+    <div id="section1"><!--fix-->
+        <div class="container1">
+            <div class="chuaimg">
+                <img class="img_trong" src="resource/images/p_H_Trong/H_trong.png">
+                <div class="title">
+                    Thầy Phạm Văn Trọng
+                </div>
+            </div>
+
+            <div class="chua2container">
+                <div class="chuabutton">
+                    <a class="button" href="index.html">Trang chủ</a>
+
+                    <a class="button" href="#section2">CT 12</a>
+                    <a class="button" href="#section3">Tổng ôn</a>
+                    <a class="button" href="#section4">THPT QG</a>
+                </div>
+
+                <div class="chualink">
+                    <!--<a class="link" href="#" ><img src="resource/images/p_H_Trong/logo/L_website.png" class="logo">Website</a> -->
+                    <a class="link" href="https://www.facebook.com/PhamVanTrongEducation?locale=vi_VN"> <img
+                            src="resource/images/p_H_Trong/logo/L_facebook.png" class="logo">Thầy Phạm Văn Trọng - Luyện Thi Chuyên Hoá, 10, 11, 12</a>
+                    <a class="link" href="https://www.facebook.com/share/g/17RgbxX1rP/"><img
+                            src="resource/images/p_H_Trong/logo/L_facebook.png" class="logo">KHÓA T - NỀN TẢNG - TENS 2026 - 2K8 THẦY PHẠM VĂN TRỌNG</a>
+                    <a class="link" href="https://www.youtube.com/@phamvantrong8277"><img
+                            src="resource/images/p_H_Trong/logo/L_youtube.png" class="logo">Pham Van Trong</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------section2------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------------>
+    <div id="section2">
+        <div class="st2_title">
+            Chương trình hoá học 12
+        </div>
+        <div class="cotainerchualist">
+            <!------------------------------------------------------chương 1-------------------------------------->
+            <details class="layer1">
+                <summary>
+                    Chương 1: ester-lipid
+                </summary>
+                <ol class="k">
+                    <li>
+                        <!------------------------------------------------------ester-------------------------------------->
+                        <details class="layer2">
+                            <summary>
+                                Ester
+                            </summary>
+                            <ol class="k">
+                                <li>
+                                    <!-----------------------------------------------------lý thuyết ester-------------------------------------->
+                                    <details class="layer3">
+                                        <summary>
+                                            Lý thuyết
+                                        </summary>
+                                        <ol class="layer4">
+                                            <li>
+                                                <a href="https://www.youtube.com/watch?v=Jl3DzjQQIIE">Video</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://drive.google.com/file/d/1RJKPVErA94M2U8fOtV4ZkK0ri0nYRTG6/view?usp=sharing">Bảng viết tay</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li>
+                                    <!-----------------------------------------------------bài tập ester-------------------------------------->
+                                    <details class="layer3">
+                                        <summary>
+                                            Bài tập
+                                        </summary>
+                                        <ol>
+                                            <li>
+                                                <!-----------------------------------------------------bài tập ester 1-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        BÀI TẬP ESTER TỜ 01-PHẦN 1 CÂU 1-90 (SÁCH CPHC)
+                                                    </summary>
+                                                    <ol>
+                                                        <li>
+                                                            <a href="https://drive.google.com/file/d/14OMVBZzAuUN3xMi4HYZ8jJcD49yzgYUd/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.facebook.com/share/v/1Bbq59c1iW/">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://drive.google.com/file/d/1oDygl9C8vhmComux2BXTZ9I9rd4HtehG/view?usp=sharing">Đáp án viết tay</a>
+                                                        </li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <!-----------------------------------------------------bài tập ester 2-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        BÀI TẬP ESTER TỜ 01-PHẦN 1 CÂU 91-136 (SÁCH CPHC)
+
+                                                    </summary>
+                                                    <ol>
+                                                        <li>
+                                                            <a href="https://drive.google.com/file/d/14OMVBZzAuUN3xMi4HYZ8jJcD49yzgYUd/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.facebook.com/share/v/14wBhrJZdQ/">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://drive.google.com/file/d/1V7DuLNSsbQF2o704sUJiH_4NtNLhSUHj/view?usp=sharing">Đáp án viết tay</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://drive.google.com/file/d/1dbNk9JKIpsytZ3VmRrePM5d-BXCzdJEk/view?usp=sharing">VIẾT TAY-BIỆN LUẬN CHẤT</a>
+                                                        </li>
+                                                    </ol>
+                                                </details>
+
+                                            </li>
+                                            <li>
+                                                <!-----------------------------------------------------bài tập ester 3-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        BÀI TẬP ESTER TỜ 01-PHẦN 1 CÂU 137-166 (SÁCH CPHC) </summary>
+                                                    <ol class="layer5">
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/14OMVBZzAuUN3xMi4HYZ8jJcD49yzgYUd/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.facebook.com/share/v/1BoMoSQwvT/">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1pcy2O86i2r1PNr6MoGnoJAsYDkhECT9h/view?usp=sharing">Đáp án viết tay</a>
+                                                        </li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li>
+                        <!------------------------------------------------------lipid chất béo-------------------------------------->
+
+                        <details class="layer2">
+                            <summary>
+                                Lipid-Chất béo
+                            </summary>
+                            <ol class="k">
+                                <li>
+                                    <!-----------------------------------------------------lý thuyết lipid-------------------------------------->
+
+                                    <details class="layer3">
+                                        <summary>
+                                            Lý thuyết
+                                        </summary>
+                                        <ol class="layer4">
+                                            <li>
+                                                <a
+                                                    href="https://www.facebook.com/PhamVanTrongEducation/videos/1411885453137633?idorvanity=1256938272092386">Video</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://drive.google.com/file/d/1mmiLeWvZ8Hm5rjYWiN4Re4xFPLbWMrG9/view?usp=sharing">
+                                                    Bảng viết tay</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <!-----------------------------------------------------Bài tập lipid-------------------------------------->
+
+                                <details class="layer3">
+                                    <summary>
+                                        Bài tập
+                                    </summary>
+                                    <ol class="layer4">
+                                        <li>
+                                            <a
+                                                href="https://drive.google.com/file/d/14OMVBZzAuUN3xMi4HYZ8jJcD49yzgYUd/view?usp=sharing">Đề</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/share/v/14pW8v1mM2/">Video</a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://drive.google.com/file/d/19DBKsis-EslYM8UfnXVVMVj-INauii2I/view?usp=sharing"> Bảng viết tay</a>
+                                        </li>
+                                    </ol>
+                                </details>
+                                <li>
+
+                                </li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li>
+                        <!------------------------------------------------------xà phòng-------------------------------------->
+
+                        <details class="layer2">
+                            <summary>
+                                Xà phòng-Chất giặt rửa
+                            </summary>
+                            <ol class="k">
+                                <li>
+                                    <!-----------------------------------------------------lý thuyết xà phòng------------------------------------->
+
+                                    <details class="layer3">
+                                        <summary>
+                                            Lý thuyết
+                                        </summary>
+                                        <ol class="layer4">
+                                            <li>
+                                                <a
+                                                    href="https://www.facebook.com/PhamVanTrongEducation/videos/1881790699285692?idorvanity=1256938272092386">Video</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://drive.google.com/file/d/1XRzjRbi7JBpJNatFdPjP9_McJaV36kmh/view?usp=sharing">
+                                                    Bảng viết tay</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <!-----------------------------------------------------Bài tập xà phòng-------------------------------------->
+
+                                <details class="layer3">
+                                    <summary>
+                                        Bài tập
+                                    </summary>
+                                    <ol class="layer4">
+                                        <li>
+                                            <a
+                                                href="https://drive.google.com/file/d/14OMVBZzAuUN3xMi4HYZ8jJcD49yzgYUd/view?usp=sharing">Đề</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/share/v/169c6mz3xQ/">Video</a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://drive.google.com/file/d/1PSG5xFI-5med1U9wBPaWQYla-N_edNlk/view?usp=sharing">
+                                                Bảng viết tay</a>
+                                        </li>
+                                    </ol>
+                                </details>
+                                <li>
+
+                                </li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li>
+                        <!------------------------------------------------------Ôn tập-------------------------------------->
+
+                        <details class="layer2">
+                            <summary>
+                                Ôn tập-Các dạng toán
+                            </summary>
+                            <ol class="k">
+                                <li>
+                                    <!-----------------------------------------------------ôn tập chương------------------------------------>
+
+                                    <details class="layer3">
+                                        <summary>
+                                            Bài tập ôn tập chương 1
+                                        </summary>
+                                        <ol class="layer4">
+                                            <li>
+                                                <a
+                                                    href="https://drive.google.com/file/d/14OMVBZzAuUN3xMi4HYZ8jJcD49yzgYUd/view?usp=sharing">Đề</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.facebook.com/share/v/16dkiWELSt/">Video</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://drive.google.com/file/d/1PSG5xFI-5med1U9wBPaWQYla-N_edNlk/view?usp=sharing">
+                                                    Bảng viết tay</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <!-----------------------------------------------------Xà phòng hoá-------------------------------------->
+
+                                <details class="layer3">
+                                    <summary>
+                                        Dạng toán xà phòng hoá
+                                    </summary>
+                                    <ol class="layer4">
+                                        <li>
+                                            <a
+                                                href="https://drive.google.com/file/d/14OMVBZzAuUN3xMi4HYZ8jJcD49yzgYUd/view?usp=sharing">Đề</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/share/v/15ZyTLJZZ9/">Video</a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://drive.google.com/file/d/1wGLBXRKYzFeeEfsH_lIRCTD2GE2ZOuqw/view?usp=sharing">
+                                                Bảng viết tay</a>
+                                        </li>
+                                    </ol>
+                                </details>
+                                <li>
+                                    <!-----------------------------------------------------Điều chế ester-------------------------------------->
+
+                                    <details class="layer3">
+                                        <summary>
+                                            Dạng toán điều chế ester
+                                        </summary>
+                                        <ol class="layer4">
+                                            <li>
+                                                <a
+                                                    href="https://drive.google.com/file/d/14OMVBZzAuUN3xMi4HYZ8jJcD49yzgYUd/view?usp=sharing">Đề</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.facebook.com/share/v/1BJCpXeW4b/">Video</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://drive.google.com/file/d/1J-WfwNn_DDygICee0PxdKWEe49MBYi9o/view?usp=sharing">
+                                                    Bảng viết tay</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <!-----------------------------------------------------68 câu chuyên biệt-------------------------------------->
+
+                                <li>
+                                    <details class="layer3">
+                                        <summary>
+                                            68 CÂU LÝ THUYẾT CHUYÊN BIỆT ESTER
+                                        </summary>
+                                        <ol>
+                                            <li>
+                                                <!-----------------------------------------------------câu chuyên biệt 1-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        68 CÂU LÝ THUYẾT CHUYÊN BIỆT ESTER SÔ 01
+                                                    </summary>
+                                                    <ol>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/10P-8rYA5SS1zKJiFLuDC4N6jOV4u-YKz/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.youtube.com/watch?v=9WGBAdt-VkU">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1PfNH6cHSfUsuBSL7xH3yWpDwExAjlV0m/view?usp=sharing">Đáp
+                                                                án viết tay</a>
+                                                        </li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <!-----------------------------------------------------câu chuyên biệt 2-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        68 CÂU LÝ THUYẾT CHUYÊN BIỆT ESTER SÔ 02
+
+                                                    </summary>
+                                                    <ol>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1YbWIcfTgICJla7MujiDkOpCUbbgp2Oc4/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.youtube.com/watch?v=1NEeC2ETOJw&feature=youtu.be">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1R7X3kULeJVPISPnCMtdK7r4S-XobF_7-/view?usp=sharing">Đáp
+                                                                án viết tay</a>
+                                                        </li>
+
+                                                    </ol>
+                                                </details>
+
+                                            </li>
+                                            <li>
+                                                <!-----------------------------------------------------câu chuyên biệt 3-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        68 CÂU LÝ THUYẾT CHUYÊN BIỆT ESTER SÔ 03 </summary>
+                                                    <ol class="layer5">
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1zXH80Zg5wAcWjCT3Z3t7wgX1jvfNPcHN/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.youtube.com/watch?v=LrYDrQWkHcA">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1ehXO3Xet2ULTzkkyqaV3M5MGUK-rsN-v/view?usp=sharing">Đáp
+                                                                án viết tay</a>
+                                                        </li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <details class="layer4">
+                                                    <summary>
+                                                        68 CÂU LÝ THUYẾT CHUYÊN BIỆT ESTER SÔ 04 </summary>
+                                                    <ol class="layer5">
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1-aiHd0s_iHYxMCJLB5bJfs2P4EYCq9kC/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.youtube.com/watch?v=uZwATWgrN0k">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1CeHs-zmG3jfkGf_bCvrj7gb16eu43Zfg/view?usp=sharing">Đáp
+                                                                án viết tay</a>
+                                                        </li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <!-----------------------------------------------------bài tập thực tế-------------------------------------->
+
+                                <li>
+                                    <details class="layer3">
+                                        <summary>
+                                            BÀI TẬP THỰC TẾ ĐIỀU CHẾ ESTER
+                                        </summary>
+                                        <ol>
+                                            <li>
+                                                <!-----------------------------------------------------BÀI TẬP THỰC TẾ ĐIỀU CHẾ ESTER PHẦN 1-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        BÀI TẬP THỰC TẾ ĐIỀU CHẾ ESTER PHẦN 1
+                                                    </summary>
+                                                    <ol>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1v4Ofah0zNp1QcUzAVlCB9pTzRM1FPrgo/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.facebook.com/share/v/15AcMoHDRt/">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1byex0wgwHLOOHTf55a5yrfl6vbXGLd5V/view?usp=sharing">Đáp
+                                                                án viết tay</a>
+                                                        </li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <!-----------------------------------------------------BÀI TẬP THỰC TẾ ĐIỀU CHẾ ESTER PHẦN 2-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        BÀI TẬP THỰC TẾ ĐIỀU CHẾ ESTER PHẦN 2
+
+                                                    </summary>
+                                                    <ol>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1KxIFREQRhERIIezT0tg4Kx7fjNVYE5qa/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.youtube.com/watch?v=NKELiG5enAg">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1jd8Ju7cjNKD9J1s_OHM97W3j22-pbqjj/view?usp=sharing">Đáp
+                                                                án viết tay</a>
+                                                        </li>
+
+                                                    </ol>
+                                                </details>
+
+                                            </li>
+
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li>
+                                    <!-----------------------------------------------------BỔ SUNG BÀI TẬP ESTER HÓA-------------------------------------->
+
+                                    <details class="layer3">
+                                        <summary>
+                                            BỔ SUNG BÀI TẬP ESTER HÓA
+                                        </summary>
+                                        <ol class="layer4">
+                                            <li>
+                                                <a
+                                                    href="https://drive.google.com/file/d/1WkD1zfGBQ_SOZUWwacmt6vF6695zTZze/view?usp=sharing">Đề</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.facebook.com/share/v/16R7iaSizm/">Video</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://drive.google.com/file/d/1_4kCMBeHA8qu0PN3yWFhHO9Dgllalg8e/view?usp=sharing">
+                                                    Bảng viết tay</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <!-----------------------------------------------------ĐỀ LUYỆN TẬP ESTER SỐ -------------------------------------->
+
+                                <li>
+                                    <details class="layer3">
+                                        <summary>
+                                            ĐỀ LUYỆN TẬP ESTER
+                                        </summary>
+                                        <ol>
+                                            <li>
+                                                <!-----------------------------------------------------ĐỀ LUYỆN TẬP ESTER SỐ 01-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        ĐỀ LUYỆN TẬP ESTER SỐ 01
+                                                    </summary>
+                                                    <ol>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1QuR3QL5Qjo9U2KnFxmRUsbm8lpG1U1Zx/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.facebook.com/share/v/1Z6wks8R1R/">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1t6Z6OU5Gil2DLAWwmY_sb8CjfL5rQJYP/view?usp=sharing">Đáp
+                                                                án viết tay</a>
+                                                        </li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <!-----------------------------------------------------đề luyện tập ester 2-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        ĐỀ LUYỆN TẬP ESTER SỐ 02
+
+                                                    </summary>
+                                                    <ol>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/16WVCnf6fqNX8mqJupBgxqr_CCD-Gb5Vf/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.facebook.com/PhamVanTrongEducation/videos/1398759967977316?idorvanity=1256938272092386">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1hyzjBzjJWQHuKu1kYSkQjOHKjJhLUz7l/view?usp=sharing">Đáp
+                                                                án viết tay</a>
+                                                        </li>
+
+                                                    </ol>
+                                                </details>
+
+                                            </li>
+                                            <li>
+                                                <!-----------------------------------------------------ĐỀ LUYỆN TẬP ESTER SỐ 03-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        ĐỀ LUYỆN TẬP ESTER SỐ 03 </summary>
+                                                    <ol class="layer5">
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1Iui2_yHyYqwhlpzLIpqPnx54Ri2TmzhM/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.facebook.com/share/v/1AYpB5vmtx/">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1ZEgYlsPTadRzIrpV48LuIs5L8WW_wJ_5/view?usp=sharing">Đáp
+                                                                án viết tay</a>
+                                                        </li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                            <!-----------------------------------------------------ĐỀ LUYỆN TẬP ESTER SỐ 04-------------------------------------->
+
+                                            <li>
+                                                <details class="layer4">
+                                                    <summary>
+                                                        ĐỀ LUYỆN TẬP ESTER SỐ 04 </summary>
+                                                    <ol class="layer5">
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/149rzgLAzaTo0DSK8kVbQfzwcUaN8NzVO/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.facebook.com/share/v/1CqTZFXUTt/">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://drive.google.com/file/d/1vA9znMhG6RV4xZbKoLiMs7yUdmzvzFN0/view?usp=sharing">Đáp án viết tay</a>
+                                                        </li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+
+                                <!-----------------------------------------------------BÀI TẬP ĐÚNG SAI ESTER-CHẤT BÉO-CHẤT GIẶT RỬA -------------------------------------->
+
+                                <li>
+                                    <details class="layer3">
+                                        <summary>
+                                            BÀI TẬP ĐÚNG SAI ESTER-CHẤT BÉO-CHẤT GIẶT RỬA
+                                        </summary>
+                                        <ol>
+                                            <li>
+                                                <!-----------------------------------------------------BÀI TẬP ĐÚNG SAI ESTER-CHẤT BÉO-CHẤT GIẶT RỬA PHẦN 1-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        BÀI TẬP ĐÚNG SAI ESTER-CHẤT BÉO-CHẤT GIẶT RỬA PHẦN 1
+                                                    </summary>
+                                                    <ol>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1KFNhD_0QXFzRJc7JmFHl6BeyPK3B8_Cq/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.youtube.com/watch?v=3zoQt3C7t5A">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1xRROGbSPhieL2ON9wR_I3dcOG5cG06D6/view?usp=sharing">Đáp
+                                                                án viết tay</a>
+                                                        </li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <!-----------------------------------------------------BÀI TẬP ĐÚNG SAI ESTER-CHẤT BÉO-CHẤT GIẶT RỬA PHẦN 2-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        BÀI TẬP ĐÚNG SAI ESTER-CHẤT BÉO-CHẤT GIẶT RỬA PHẦN 2
+
+                                                    </summary>
+                                                    <ol>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1stjXPXAqf2rK91RmRcuvcPDw8Ym3N8bY/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.facebook.com/share/v/15udaUSmAf/">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/18Q6BfhBhgDgOcJm-yoe_-0iK5LSh2foN/view?usp=sharing">Đáp
+                                                                án viết tay</a>
+                                                        </li>
+
+                                                    </ol>
+                                                </details>
+
+                                            </li>
+                                            <li>
+                                                <!-----------------------------------------------------BÀI TẬP ĐÚNG SAI ESTER-CHẤT BÉO-CHẤT GIẶT RỬA PHẦN 3-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        BÀI TẬP ĐÚNG SAI ESTER-CHẤT BÉO-CHẤT GIẶT RỬA PHẦN 3 </summary>
+                                                    <ol class="layer5">
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/16nytSuPeNf1iYq2R9KLy8U3-DE6p4u1d/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Video: Chưa có</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Đáp
+                                                                án viết tay: Chưa có</a>
+                                                        </li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+
+                                        </ol>
+                                    </details>
+                                </li>
+
+                                <!-----------------------------------------------------BÀI TẬP THÍ NGHIỆM ĐIỀU CHẾ, THỦY PHÂN  ESTER  -------------------------------------->
+
+                                <li>
+                                    <details class="layer3">
+                                        <summary>
+                                            BÀI TẬP THÍ NGHIỆM ĐIỀU CHẾ, THỦY PHÂN ESTER
+                                        </summary>
+                                        <ol>
+                                            <li>
+                                                <!-----------------------------------------------------BÀI TẬP ĐÚNG SAI ESTER-CHẤT BÉO-CHẤT GIẶT RỬA PHẦN 1-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        BÀI TẬP THÍ NGHIỆM ĐIỀU CHẾ, THỦY PHÂN ESTER
+                                                    </summary>
+                                                    <ol>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1fF4B5wV437xTkM33LQoiCAX4sHsTnq0s/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.facebook.com/share/v/15EGGp1V1Z/">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1v4IGcd4HdAQIDl7braeiR7bCLD-RWWyP/view?usp=sharing">Đáp
+                                                                án viết tay</a>
+                                                        </li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <!-----------------------------------------------------BÀI TẬP ĐÚNG SAI ESTER-CHẤT BÉO-CHẤT GIẶT RỬA PHẦN 2-------------------------------------->
+
+                                                <details class="layer4">
+                                                    <summary>
+                                                        BÀI TẬP THÍ NGHIỆM ĐIỀU CHẾ, THỦY PHÂN ESTER VDC
+
+                                                    </summary>
+                                                    <ol>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/15L58jJzsR-_yEbdDlPhclTeoIvGJYRcv/view?usp=sharing">Đề</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://youtu.be/B9Q4RunoiQM">Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://drive.google.com/file/d/1VxwiDH1I8bvGkKL4Hhh2w6n9XpxmwFa4/view?usp=sharing">Đáp
+                                                                án viết tay</a>
+                                                        </li>
+
+                                                    </ol>
+                                                </details>
+
+                                            </li>
+
+
+                                        </ol>
+                                    </details>
+                                </li>
+
+                                <li>
+                                    <!-----------------------------------------------------tổng ôn chương 1-------------------------------------->
+
+                                    <details class="layer3">
+                                        <summary>
+                                            TỔNG ÔN TOÀN DIỆN LÝ THUYẾT CHƯƠNG 1
+                                        </summary>
+                                        <ol class="layer4">
+                                            <li><a
+                                                    href="https://drive.google.com/file/d/1zpiaBLVc-dn1aA917UJo5AHZOpa5K2cU/view?usp=sharing">Đề</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.facebook.com/share/v/1Ar9aD56sW/">Video</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://drive.google.com/file/d/17bzwIz74j8JFaMALynYU4f6Md2rE0oMf/view?usp=sharing">
+                                                    Bảng viết tay</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+
+                            </ol>
+                        </details>
+                    </li>
+                </ol>
+            </details>
+
+            <details class="layer1">
+                <summary>
+                    Chương 2: Carbohydrate
+                </summary>
+                <ol class="k">
+                    <li>
+                        Chưa có
+                    </li>
+                </ol>
+            </details>
+
+            <details class="layer1">
+                <summary>
+                    Chương 3: Hợp chất chứa nitrogen
+                </summary>
+                <ol class="k">
+                    <li>
+                        Chưa có
+                    </li>
+                </ol>
+            </details>
+
+            <details class="layer1">
+                <summary>
+                    Chương 4: Polymer
+                </summary>
+                <ol class="k">
+                    <li>
+                        Chưa có
+                    </li>
+                </ol>
+            </details>
+
+            <details class="layer1">
+                <summary>
+                    Chương 5: Pin điện và điện phân
+                </summary>
+                <ol class="k">
+                    <li>
+                        a
+                    </li>
+                    <li>
+                        b
+                    </li>
+                </ol>
+            </details>
+
+            <details class="layer1">
+                <summary>
+                    Chương 6: Đại cương về kim loại
+                </summary>
+                <ol class="k">
+                    <li>
+                        Chưa có
+                    </li>
+                </ol>
+            </details>
+
+            <details class="layer1">
+                <summary>
+                    Chương 7: Nguyên tố nhóm IA và nhóm IIA
+                </summary>
+                <ol class="k">
+                    <li>
+                        Chưa có
+                    </li>
+                    
+                </ol>
+            </details>
+
+            <details class="layer1">
+                <summary>
+                    Chương 8: Sơ lược về dãy kim loại chuyển tiếp thứ nhất và phức chất
+                </summary>
+                <ol class="k">
+                    <li>
+                        Chưa có
+                    </li>
+                </ol>
+            </details>
+        </div>
+    </div>
+
+
+
+
+
+    <!------------------------------------------------------section3------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------------>
+    <div id="section3">
+        <!------------------------------------------------------tổng ôn hoá hữu cơ------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------------------------>
+        <div class="section3-title">
+            Tổng ôn kiểm tra hoá hữu cơ
+        </div>
+
+        <div class="container_chua_card">
+            <div class="card">
+                <img src="resource/images/p_H_Trong/icon-hoa/a.png" alt="iconhoa" class="icon-hoa">
+                <div class="card_title">Lần 1</div>
+                <div class="box"></div>
+                <div class="card_chua_button">
+                    <a class="card_button"
+                        href="https://drive.google.com/file/d/1-kyIE4EPowMf8UIeZWeZJdcyENU0hR_L/view?usp=sharing">Đề</a>
+                    <a class="card_button" href="https://www.youtube.com/watch?v=xccb_uVx1sk">Video</a>
+                    <a class="card_button"
+                        href="https://drive.google.com/file/d/1eCfHZbfopXWI7jJJuxbjCHZNW4GP3C_x/view?usp=sharing">Đáp
+                        án</a>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="card">
+                <img src="resource/images/p_H_Trong/icon-hoa/b.png" alt="iconhoa" class="icon-hoa">
+                <div class="card_title">Lần 2</div>
+                <div class="box"></div>
+                <div class="card_chua_button">
+                    <a class="card_button"
+                        href="https://drive.google.com/file/d/12rv4teGawjM62R7eG928xc5_U6U4pZtJ/view?usp=sharing">Đề</a>
+                    <a class="card_button" href="https://www.youtube.com/watch?v=TvvQIzWs8bM">Video</a>
+                    <a class="card_button"
+                        href="https://drive.google.com/file/d/11MolxlHNXWhzM7BzEb_9OXHsgR4O3EKx/view?usp=sharing">Đáp
+                        án</a>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+                <img src="resource/images/p_H_Trong/icon-hoa/c.png" alt="iconhoa" class="icon-hoa">
+                <div class="card_title">Lần 3</div>
+                <div class="box"></div>
+                <div class="card_chua_button">
+                    <a class="card_button"
+                        href="https://drive.google.com/file/d/18uirRNrd_GOMLfGTWgIgONfz06xru_Cg/view?usp=sharing">Đề</a>
+                    <a class="card_button" href="https://www.youtube.com/watch?v=eZLOIBspwdg">Video</a>
+                    <a class="card_button"
+                        href="https://drive.google.com/file/d/1Y1KqFY0Jbo29uSBU369fphZAnx660rNd/view?usp=sharing">Đáp
+                        án</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+                <img src="resource/images/p_H_Trong/icon-hoa/d.png" alt="iconhoa" class="icon-hoa">
+                <div class="card_title">Lần 4</div>
+                <div class="box"></div>
+                <div class="card_chua_button">
+                    <a class="card_button" href="#">Đề</a>
+                    <a class="card_button" href="#">Video</a>
+                    <a class="card_button" href="#">Đáp án</a>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!------------------------------------------------------tổng ôn hoá vô cơ------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------------------------>
+        <div class="section3-title2">
+            Tổng ôn toàn diện hoá vô cơ
+        </div>
+        <div class="container_chua_card2">
+            <div class="card2">
+                <div class="card_title2">Phản ứng oxi hoá khử</div>
+                <div class="box2"></div>
+                <div class="card_chua_button2">
+                    <a class="card_button2" href="https://www.youtube.com/watch?v=Wp_hUvmQ-yE&t=3453s">Video</a>
+                    <a class="card_button2" href="https://drive.google.com/file/d/1Ss2QSsaQFBVylpk_fOPufr-gfl4HwMpl/view?usp=sharing">Viết tay</a>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="card_title2">Phản ứng oxi hoá khử 2</div>
+                <div class="box2"></div>
+                <div class="card_chua_button2">
+                    <a class="card_button2" href="https://www.youtube.com/watch?v=wq0PBuOoufQ&t=3s">Video</a>
+                    <a class="card_button2" href="https://drive.google.com/file/d/15-coVguqCLqGEEM-Gqb1pxSN6ToX1uaJ/view?usp=sharing">Viết tay</a>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="card_title2">Năng lượng hoá học</div>
+                <div class="box2"></div>
+                <div class="card_chua_button2">
+                    <a class="card_button2" href="https://www.youtube.com/watch?v=ItriNDlO9Vk&t=3s">Video</a>
+                    <a class="card_button2" href="https://drive.google.com/file/d/14VMJF7BQfDRn_jlRs-3djZkNih4ZNs7G/view?usp=sharing">Viết tay</a>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="card_title2">Tốc độ phản ứng</div>
+                <div class="box2"></div>
+                <div class="card_chua_button2">
+                    <a class="card_button2" href="https://www.youtube.com/watch?v=aI8Koc1srQ4&t=8s">Video</a>
+                    <a class="card_button2" href="https://drive.google.com/file/d/1qG6V5doCbK0bb-sB_YVJBuuOtoQ3w-d7/view?usp=sharing">Viết tay</a>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="card_title2">Halogen</div>
+                <div class="box2"></div>
+                <div class="card_chua_button2">
+                    <a class="card_button2" href="https://www.youtube.com/watch?v=Y4aBmr5k_7g">Video</a>
+                    <a class="card_button2" href="https://drive.google.com/file/d/1MDi4pGAkb5jg9kWrHinnULcVNrb4_Mki/view?usp=sharing">Viết tay</a>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="card_title2">Halogen 2</div>
+                <div class="box2"></div>
+                <div class="card_chua_button2">
+                    <a class="card_button2" href="https://www.youtube.com/watch?v=jKy4B2mbMYc">Video</a>
+                    <a class="card_button2" href="https://drive.google.com/file/d/1MDi4pGAkb5jg9kWrHinnULcVNrb4_Mki/view?usp=sharing">Viết tay</a>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="card_title2">Cân bằng hoá học</div>
+                <div class="box2"></div>
+                <div class="card_chua_button2">
+                    <a class="card_button2" href="https://www.youtube.com/watch?v=sxfkbZqIxoE&t=840s">Video</a>
+                    <a class="card_button2" href="https://drive.google.com/file/d/1OI3YowsD-rIjt40_WP-fPZyGmT3hRP1H/view?usp=sharing">Viết tay</a>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="card_title2">Acid & Base</div>
+                <div class="box2"></div>
+                <div class="card_chua_button2">
+                    <a class="card_button2" href="https://www.youtube.com/watch?v=kkCul_oVDZQ">Video</a>
+                    <a class="card_button2" href="https://drive.google.com/file/d/1pg_2V6fBUi2Hcjif3KMZ-K-0REPvJGDP/view?usp=sharing">Viết tay</a>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="card_title2">Nitrogen</div>
+                <div class="box2"></div>
+                <div class="card_chua_button2">
+                    <a class="card_button2" href="https://www.youtube.com/watch?v=U5Swu2TAe1s">Video</a>
+                    <a class="card_button2" href="https://drive.google.com/file/d/1p8YHaQ_F5GGrgLH6jwSxaC-5XrissPgc/view?usp=sharing">Viết tay</a>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="card_title2">Amonia</div>
+                <div class="box2"></div>
+                <div class="card_chua_button2">
+                    <a class="card_button2" href="https://www.youtube.com/watch?v=NWQSM8QXqfU">Video</a>
+                    <a class="card_button2" href="https://drive.google.com/file/d/1Zp_kNqG_qH34ccjURFv0Ert3ECEZ89C4/view?usp=sharing">Viết tay</a>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="card_title2">Hợp chất của nitrogen </div>
+                <div class="box2"></div>
+                <div class="card_chua_button2">
+                    <a class="card_button2" href="https://www.youtube.com/watch?v=rAo1p3xb7co">Video</a>
+                    <a class="card_button2" href="https://drive.google.com/file/d/140TCgxrO14n3lBhwiY-6WogcYrgdQhI5/view?usp=sharing">Viết tay</a>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="card_title2">Sulfur-sulfurdioxide</div>
+                <div class="box2"></div>
+                <div class="card_chua_button2">
+                    <a class="card_button2" href="https://www.youtube.com/watch?v=4LhOb28K1U0">Video</a>
+                    <a class="card_button2" href="https://drive.google.com/file/d/1Gh-jz77ORtiS7ooCe9syDBRKxvBtaAq0/view?usp=sharing">Viết tay</a>
+                </div>
+            </div>
+            
+            <div class="card2">
+                <div class="card_title2">Muối sulfate</div>
+                <div class="box2"></div>
+                <div class="card_chua_button2">
+                    <a class="card_button2" href="https://www.youtube.com/watch?v=Bg2B_v0x-oI">Video</a>
+                    <a class="card_button2" href="https://drive.google.com/file/d/1XPj8gijp5QiqWBI-lcu03TkNsFAJP5zq/view?usp=sharing">Viết tay</a>
+                </div>
+            </div>
+
+        </div>
+
+
+       <br><br> <br> <br>
+    </div>
+
+
+<!------------------------------------------------------section4------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------------>
+         
+    <div id="section4">
+        <div class="section4-title">
+            Đề ôn THPT_QG
+        </div>
+<!------------------------------------------------------Đề ôn thptqg------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------>
+  
+        <div class="container_chua_card4">
+            <div class="card4">
+                    <!--  <img src="resource/images/p_H_Trong/icon-hoa/a.png" alt="iconhoa" class="icon-hoa4"> -->
+                <div class="card_title4">BỘ 3 ĐỀ THI THỬ SỞ VĨNH PHÚC - TUYÊN QUANG - NGHỆ AN		</div>
+                <div class="box"></div>
+                <div class="card_chua_button4">
+                    <a class="card_button4"
+                        href="https://drive.google.com/file/d/1lJkWriO-yKN8WwUepKBEby96ptoSQzbd/view?usp=sharing">Đề</a>
+                    <a class="card_button4" href="https://youtu.be/yRdnX6gQJ4c?si=ePhgLAQTl6K6ZSuy">Video</a>
+                    <a class="card_button4"
+                        href="https://drive.google.com/file/d/1RgICnhuKUC1bGBdRFB6TlIPg_GR4ltZa/view?usp=sharing">Đáp
+                        án</a>
+                </div>
+            </div>
+
+            <div class="card4">
+                    <!--  <img src="resource/images/p_H_Trong/icon-hoa/a.png" alt="iconhoa" class="icon-hoa4"> -->
+                <div class="card_title4">ĐỀ THI THỬ SỞ NINH BÌNH (2 MÃ ĐỀ CHẴN - LẺ)</div>
+                <div class="box"></div>
+                <div class="card_chua_button4">
+                    <a class="card_button4"
+                        href="https://drive.google.com/file/d/1DOI17agW17px8ZGhoZgSTy92QFu4v5JV/view?usp=sharing">Đề</a>
+                    <a class="card_button4" href="https://www.facebook.com/watch/live/?ref=watch_permalink&v=1825781311611143&rdid=w6aC2i1zUyKuwMl8">Video</a>
+                    <a class="card_button4"
+                        href="https://drive.google.com/file/d/1d78AnEZtEUmGtXLCVaXkSDxcVb6j8eRw/view?usp=sharing">Đáp
+                        án</a>
+                </div>
+           </div>
+
+           <div class="card4">
+                    <!--  <img src="resource/images/p_H_Trong/icon-hoa/a.png" alt="iconhoa" class="icon-hoa4"> -->
+                <div class="card_title4">ĐỀ THI THỬ SỞ PHÚ YẾN		</div>
+                <div class="box"></div>
+                <div class="card_chua_button4">
+                    <a class="card_button4"
+                    href="https://drive.google.com/file/d/1fU4mAyagO33K8bL9JIEc0lz_b43eM72R/view?usp=sharing">Đề</a>
+                    <a class="card_button4" href="https://www.facebook.com/watch/live/?ref=watch_permalink&v=1825781311611143&rdid=xM0okMFMqiUxtpph">Video</a>
+                    <a class="card_button4"
+                    href="https://drive.google.com/file/d/1B-UdUnSqcLZ5vhHmZNygWnvnMPRTw5sH/view?usp=sharing">Đáp
+                    án</a>
+                </div>
+            </div>
+
+            <div class="card4">
+                    <!--  <img src="resource/images/p_H_Trong/icon-hoa/a.png" alt="iconhoa" class="icon-hoa4"> -->
+                <div class="card_title4">ĐỀ THI THỬ PHAN CHU TRINH - ĐÀ NẴNG		</div>
+                <div class="box"></div>
+                <div class="card_chua_button4">
+                    <a class="card_button4"
+                        href="https://drive.google.com/file/d/1sn8FSUVOdia5Px4qC_PSssNsUAdJXFJt/view?usp=sharing">Đề</a>
+                    <a class="card_button4" href="https://www.facebook.com/watch/live/?ref=watch_permalink&v=1610824102954089&rdid=IoqEuM4JdF8w69XO">Video</a>
+                    <a class="card_button4"
+                        href="https://drive.google.com/file/d/1CF-ejLMWqW4I2u-ihALk-VAKcARZS9eZ/view?usp=sharing">Đáp
+                        án</a>
+                </div>
+            </div>
+
+                <div class="card4">
+                    <!--  <img src="resource/images/p_H_Trong/icon-hoa/a.png" alt="iconhoa" class="icon-hoa4"> -->
+                   
+                    <div class="card_title4">ĐỀ THI THỬ SỞ ĐỒNG NAI		</div>
+                    <div class="box"></div>
+                    <div class="card_chua_button4">
+                    <a class="card_button4"
+                            href="https://drive.google.com/file/d/17bJ2xuaB3aWZJI1Od_s2R7LyKPFSC5x-/view?usp=sharing">Đề</a>
+                        <a class="card_button4" href="https://www.facebook.com/watch/live/?ref=watch_permalink&v=686732887282697&rdid=WgwmAID5xzMcB7NK">Video</a>
+                        <a class="card_button4"
+                            href="https://drive.google.com/file/d/1MBfL94GrQB2gAvP1fufkIXXX_O1nJKKm/view?usp=sharing">Đáp
+                            án</a>
+                    </div>
+                </div>
+                <div class="card4">
+                    <!--  <img src="resource/images/p_H_Trong/icon-hoa/a.png" alt="iconhoa" class="icon-hoa4"> -->
+                    <div class="card_title4">ĐỀ THI THỬ CHUYÊN KHTN LẦN 3		</div>
+                    <div class="box"></div>
+                    <div class="card_chua_button4">
+                        <a class="card_button4"
+                                href="https://drive.google.com/file/d/1ppHmlOlmR_3dOskr2F9QtuDsTnEPJrBy/view?usp=sharing">Đề</a>
+                        <a class="card_button4" href="https://youtu.be/rEq5zKj8SXc?si=GzEdx2LcUQOgkT4E">Video</a>
+                        <a class="card_button4"
+                                href="https://drive.google.com/file/d/1dsTT18z47tpx7zrYecdKd-n0XpxK6-ot/view?usp=sharing">Đáp
+                                án</a>
+                    </div>
+                </div>
+        </div>
+       <br><br><br>
+    </div>
+
+        
+</body>
+
+</html>

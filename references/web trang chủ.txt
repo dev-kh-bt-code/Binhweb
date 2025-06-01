@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binhweb - Trang web học tập</title>
+    <link rel="icon" href="https://via.placeholder.com/32x32/4facfe/ffffff?text=B" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Noto+Sans:wght@300;400;500;600;700&family=Playpen+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --dark-gradient: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+            --glass-bg: rgba(255, 255, 255, 0.08);
+            --glass-bg-hover: rgba(255, 255, 255, 0.12);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a9b8;
+            --text-accent: #4facfe;
+            --shadow-light: 0 4px 20px rgba(0, 0, 0, 0.1);
+            --shadow-medium: 0 8px 40px rgba(0, 0, 0, 0.15);
+            --shadow-heavy: 0 16px 60px rgba(0, 0, 0, 0.25);
+            --border-radius: 20px;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .nav:hover {
+            background: rgba(10, 10, 10, 0.9);
+        }
+
+        .nav .logo {
+            height: 40px;
+            width: 40px;
+            background: var(--accent-gradient);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .nav .logo:hover {
+            transform: scale(1.1);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-link {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 0.7rem 1.2rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-link::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--accent-gradient);
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+
+        .nav-link:hover::before {
+            left: 0;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+            border-color: var(--text-accent);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            top: 100px;
+            left: 2rem;
+            width: 300px;
+            height: calc(100vh - 140px);
+            background: rgba(22, 27, 34, 0.9);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            z-index: 999;
+            transition: var(--transition);
+        }
+
+        .sidebar:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-heavy);
+            border-color: var(--text-accent);
+        }
+
+        .sidebar-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-accent);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sidebar-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-gradient);
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+
+        .sidebar-link:hover::before {
+            left: 0;
+        }
+
+        .sidebar-link:hover {
+            transform: translateX(8px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        /* Main Container */
+        .main-container {
+            margin-left: 360px;
+            padding: 100px 2rem 2rem;
+            max-width: calc(100vw - 400px);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(16, 41, 77, 0.8) 0%, rgba(6, 15, 27, 0.8) 100%),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%234facfe"/><stop offset="100%" style="stop-color:%2300f2fe"/></linearGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)" opacity="0.1"/><circle cx="800" cy="300" r="150" fill="url(%23a)" opacity="0.05"/><circle cx="500" cy="700" r="80" fill="url(%23a)" opacity="0.08"/></svg>');
+            background-size: cover;
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-title {
+            font-family: "Baloo Bhai 2", sans-serif;
+            font-size: clamp(2rem, 8vw, 6rem);
+            font-weight: 800;
+            background: var(--secondary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-family: "Noto Sans", sans-serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            animation: slideInRight 1s ease-out 0.2s both;
+        }
+
+        .hero-description {
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+            background: var(--glass-bg-hover);
+            border-color: var(--text-accent);
+        }
+
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+            fill: var(--text-accent);
+            transition: var(--transition);
+        }
+
+        .contact-item:hover .contact-icon {
+            fill: #f5576c;
+            transform: scale(1.1);
+        }
+
+        /* Content Sections */
+        .content-section {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin-bottom: 3rem;
+            transition: var(--transition);
+        }
+
+        .content-section:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+            border-color: var(--text-accent);
+        }
+
+        .section-title {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .math-title {
+            background: linear-gradient(135deg, #f53e45 0%, #e95cbc 50%, #fecfef 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .physics-title {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chemistry-title {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Resource Grid */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .resource-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--text-primary);
+            position: relative;
+            group: hover;
+        }
+
+        .resource-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--accent-gradient);
+            opacity: 0;
+            transition: var(--transition);
+            z-index: -1;
+        }
+
+        .resource-card:hover::before {
+            opacity: 0.1;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: var(--shadow-heavy);
+            border-color: var(--text-accent);
+        }
+
+        .resource-image {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            transition: var(--transition);
+        }
+
+        .resource-card:hover .resource-image {
+            transform: scale(1.05);
+        }
+
+        .resource-title {
+            padding: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            background: rgba(45, 55, 72, 0.9);
+        }
+
+        /* Animations */
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .main-container {
+                margin-left: 0;
+                max-width: 100vw;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .nav {
+                padding: 0 1rem;
+            }
+
+            .nav-links {
+                gap: 0.5rem;
+            }
+
+            .nav-link {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
+
+            .hero-section {
+                padding: 2rem 1rem;
+            }
+
+            .content-section {
+                padding: 1.5rem 1rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .resource-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .resource-image {
+                height: 120px;
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="logo">B</a>
+        <div class="nav-links">
+            <a href="#info" class="nav-link">
+                <i class="fas fa-info-circle"></i>
+                Thông tin
+            </a>
+            <a href="#resources" class="nav-link">
+                <i class="fas fa-book"></i>
+                Kho tài liệu
+            </a>
+            <a href="#about" class="nav-link">
+                <i class="fas fa-user"></i>
+                About me
+            </a>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-title">
+            <i class="fas fa-compass"></i>
+            Điều hướng nhanh
+        </div>
+        <a href="#info" class="sidebar-link">
+            <i class="fas fa-info-circle"></i>
+            Thông tin
+        </a>
+        <a href="#resources" class="sidebar-link">
+            <i class="fas fa-book"></i>
+            Kho tài liệu
+        </a>
+        <a href="#about" class="sidebar-link">
+            <i class="fas fa-user"></i>
+            About me
+        </a>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="hero-title">Binhweb</h1>
+            <h2 class="hero-subtitle">Trang web học tập do QB phát triển</h2>
+            
+            <div class="hero-description">
+                <p>🎯 Được phát triển với mục đích chia sẻ thông tin và tài liệu liên quan đến kì thi THPT QG</p>
+                <p>📚 Tài liệu do QB tìm được, hoặc do người khác đóng góp</p>
+                <p>🤝 Bạn cũng có thể đóng góp thông qua thư mục drive</p>
+            </div>
+
+            <h3 style="color: var(--text-accent); margin-bottom: 1rem;">Liên hệ với QB:</h3>
+            <div class="contact-grid">
+                <a href="https://www.facebook.com/share/1Ef4wx1HrF/" class="contact-item">
+                    <svg class="contact-icon" role="img" viewBox="0 0 24 24">
+                        <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/>
+                    </svg>
+                    <span>Trần Quang Bình</span>
+                </a>
+                
+                <a href="https://github.com/dev-kh-bt-code" class="contact-item">
+                    <svg class="contact-icon" role="img" viewBox="0 0 24 24">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                    <span>dev-kh-bt-code</span>
+                </a>
+                
+                <a href="mailto:quangbinh070408@gmail.com" class="contact-item">
+                    <svg class="contact-icon" role="img" viewBox="0 0 24 24">
+                        <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                    </svg>
+                    <span>quangbinh070408@gmail.com</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section id="info" class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-info-circle" style="color: var(--text-accent);"></i>
+                Thông tin kì thi THPT QG
+            </h2>
+            <p style="color: var(--text-secondary);">Đây là nơi chứa thông tin kì thi THPT Quốc gia (đang phát triển)</p>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="content-section">
+            <!-- Math Section -->
+            <div style="margin-bottom: 3rem;">
+                <h2 class="section-title math-title">
+                    <i class="fas fa-calculator"></i>
+                    Toán học
+                </h2>
+                <div class="resource-grid">
+                    <a href="#" class="resource-card">
+                        <div class="resource-image">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="resource-title">Đỗ Văn Đức</div>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <div class="resource-image">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="resource-title">Nguyễn Bảo Vương</div>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <div class="resource-image">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="resource-title">Tài liệu khác</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Physics Section -->
+            <div style="margin-bottom: 3rem;">
+                <h2 class="section-title physics-title">
+                    <i class="fas fa-atom"></i>
+                    Vật lý
+                </h2>
+                <div class="resource-grid">
+                    <a href="#" class="resource-card">
+                        <div class="resource-image">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="resource-title">Vũ Ngọc Anh</div>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <div class="resource-image">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="resource-title">Tài liệu khác</div>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <div class="resource-image">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="resource-title">Tổng hợp</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chemistry Section -->
+            <div>
+                <h2 class="section-title chemistry-title">
+                    <i class="fas fa-flask"></i>
+                    Hóa học
+                </h2>
+                <div class="resource-grid">
+                    <a href="#" class="resource-card">
+                        <div class="resource-image">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <div class="resource-title">Phạm Văn Trọng</div>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <div class="resource-image">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="resource-title">Phạm Thắng</div>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <div class="resource-image">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="resource-title">Tài liệu khác</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-user" style="color: var(--text-accent);"></i>
+                About me
+            </h2>
+            <p style="color: var(--text-secondary);">Đây là nơi chứa thông tin về QB (đang phát triển)</p>
+        </section>
+    </div>
+</body>
+</html>

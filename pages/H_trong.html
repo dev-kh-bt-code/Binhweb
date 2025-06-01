@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LX3SRKTXH1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LX3SRKTXH1');
+    </script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Binhweb_thptqg_chemistry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @keyframes slide_l_r {
+            from {
+                transform: translateX(-20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        /* === RESET & BASE STYLES === */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* === SIDEBAR STYLES === */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            box-shadow: 5px 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar.active {
+            left: 0;
+            animation: slideInLeft 0.3s ease-out;
+        }
+
+        .sidebar-header {
+            padding: 30px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .sidebar-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebar-title {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .sidebar-subtitle {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+        }
+
+        .sidebar-nav {
+            padding: 20px 0;
+        }
+
+        .sidebar-nav a {
+            display: flex;
+            align-items: center;
+            padding: 15px 25px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar-nav a:hover,
+        .sidebar-nav a.active {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-left-color: #fff;
+            transform: translateX(5px);
+        }
+
+        .sidebar-nav-icon {
+            margin-right: 15px;
+            font-size: 18px;
+        }
+
+        /* Hamburger Menu */
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1001;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border: none;
+            border-radius: 12px;
+            padding: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .menu-toggle:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .hamburger {
+            width: 24px;
+            height: 18px;
+            position: relative;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: white;
+            border-radius: 1px;
+            position: absolute;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger span:nth-child(1) { top: 0; }
+        .hamburger span:nth-child(2) { top: 8px; }
+        .hamburger span:nth-child(3) { bottom: 0; }
+
+        .menu-toggle.active .hamburger span:nth-child(1) {
+            transform: rotate(45deg);
+            top: 8px;
+        }
+
+        .menu-toggle.active .hamburger span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active .hamburger span:nth-child(3) {
+            transform: rotate(-45deg);
+            bottom: 8px;
+        }
+
+        /* Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* === MODERN NAVIGATION === */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background: rgba(31, 53, 70, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 80px 0 20px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            margin-left: 60px;
+        }
+
+        .nav-brand img {
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        .nav-brand-text {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: #9ebccb;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* === MAIN CONTENT === */
+        .main-content {
+            margin-left: 0;
+            transition: margin-left 0.3s ease;
+        }
+
+        /* === SECTIONS === */
+        #section1 {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(21, 67, 110, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23667eea"/><stop offset="100%" stop-color="%23764ba2"/></radialGradient></defs><rect width="100%" height="100%" fill="url(%23a)"/></svg>');
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 100px 50px 50px;
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .hero-image {
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-image img {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-content {
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .social-links {
+            margin-top: 40px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            color: #a198c9;
+            text-decoration: none;
+            margin-right: 30px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: white;
+            transform: translateX(10px);
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        /* === COURSE SECTIONS === */
+        .course-section {
+            padding: 80px 50px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .course-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .course-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .course-description {
+            color: #7f8c8d;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .course-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .course-btn {
+            padding: 8px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .course-btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .course-btn-secondary {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+        }
+
+        .course-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* === COLLAPSIBLE CONTENT === */
+        .curriculum-section {
+            background: #f8f9fa;
+            padding: 80px 50px;
+        }
+
+        .curriculum-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .curriculum-item {
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .curriculum-header {
+            padding: 25px 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .curriculum-header:hover {
+            background: linear-gradient(135deg, #5a6fd8, #6a42a0);
+        }
+
+        .curriculum-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .curriculum-icon {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .curriculum-item[open] .curriculum-icon {
+            transform: rotate(180deg);
+        }
+
+        .curriculum-content {
+            padding: 0;
+            background: white;
+        }
+
+        .curriculum-subcontent {
+            padding: 25px 30px;
+            border-left: 4px solid #667eea;
+            margin: 10px 0;
+        }
+
+        .subcontent-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .content-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .content-link {
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .content-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        /* === RESPONSIVE DESIGN === */
+        @media (max-width: 768px) {
+            .nav {
+                padding: 0 20px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .course-grid {
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+            }
+
+            .curriculum-container {
+                padding: 0 20px;
+            }
+
+            #section1,
+            .course-section,
+            .curriculum-section {
+                padding: 60px 20px;
+            }
+        }
+
+        /* === SCROLL ANIMATIONS === */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* === GLASSMORPHISM EFFECTS === */
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Hamburger Menu Button -->
+    <button class="menu-toggle" id="menuToggle">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </button>
+
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23667eea'/><text x='50' y='60' text-anchor='middle' fill='white' font-size='40' font-weight='bold'>T</text></svg>" alt="logo" class="sidebar-logo">
+            <div class="sidebar-title">Thầy Phạm Văn Trọng</div>
+            <div class="sidebar-subtitle">Giáo viên Hóa học</div>
+        </div>
+        <div class="sidebar-nav">
+            <a href="#section1" class="active">
+                <span class="sidebar-nav-icon">🏠</span>
+                <span>Trang chủ</span>
+            </a>
+            <a href="#section2">
+                <span class="sidebar-nav-icon">📚</span>
+                <span>Chương trình 12</span>
+            </a>
+            <a href="#section3">
+                <span class="sidebar-nav-icon">📖</span>
+                <span>Tổng ôn</span>
+            </a>
+            <a href="#section4">
+                <span class="sidebar-nav-icon">🎯</span>
+                <span>THPT QG</span>
+            </a>
+            <a href="#contact">
+                <span class="sidebar-nav-icon">📞</span>
+                <span>Liên hệ</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <div class="nav-brand">
+            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23667eea'/><text x='50' y='60' text-anchor='middle' fill='white' font-size='30' font-weight='bold'>HH</text></svg>" alt="logo">
+            <span class="nav-brand-text">Hóa Học Online</span>
+        </div>
+        <div class="nav-links">
+            <a href="#section1">Trang chủ</a>
+            <a href="#section2">CT-12</a>
+            <a href="#section3">Tổng ôn</a>
+            <a href="#section4">THPT QG</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section id="section1">
+            <div class="hero-container">
+                <div class="hero-image">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'><defs><linearGradient id='bg' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23667eea'/><stop offset='100%' stop-color='%23764ba2'/></linearGradient></defs><rect width='300' height='400' fill='url(%23bg)' rx='20'/><circle cx='150' cy='120' r='60' fill='white' opacity='0.9'/><text x='150' y='135' text-anchor='middle' fill='%23667eea' font-size='40' font-weight='bold'>T</text><rect x='50' y='200' width='200' height='8' fill='white' opacity='0.7' rx='4'/><rect x='50' y='220' width='160' height='8' fill='white' opacity='0.5' rx='4'/><rect x='50' y='240' width='180' height='8' fill='white' opacity='0.5' rx='4'/></svg>" alt="Thầy Phạm Văn Trọng">
+                </div>
+                <div class="hero-content">
+                    <h1 class="hero-title">Thầy Phạm Văn Trọng</h1>
+                    <p class="hero-subtitle">Chuyên gia giảng dạy Hóa học THPT - Luyện thi Đại học</p>
+                    <div class="hero-buttons">
+                        <a href="#section2" class="btn-primary">Khóa học</a>
+                        <a href="#section3" class="btn-secondary">Tài liệu</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/PhamVanTrongEducation" class="social-link">
+                            <span class="social-icon">📘</span>
+                            Facebook Cá nhân
+                        </a>
+                        <a href="https://www.facebook.com/share/g/17RgbxX1rP/" class="social-link">
+                            <span class="social-icon">👥</span>
+                            Nhóm học tập
+                        </a>
+                        <a href="https://www.youtube.com/@phamvantrong8277" class="social-link">
+                            <span class="social-icon">📺</span>
+                            YouTube Channel
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Program Section -->
+        <section id="section2" class="course-section">
+            <h2 class="section-title">Chương trình Hóa học 12</h2>
+            <div class="curriculum-container">
+                <!-- Chapter 1 -->
+                <details class="curriculum-item">
+                    <summary class="curriculum-header">
+                        <span class="curriculum-title">Chương 1: Ester - Lipid</span>
+                        <span class="curriculum-icon">▼</span>
+                    </summary>
+                    <div class="curriculum-content">
+                        <div class="curriculum-subcontent">
+                            <h4 class="subcontent-title">📖 Ester - Lý thuyết & Bài tập</h4>
+                            <div class="content-links">
+                                <a href="https://www.youtube.com/watch?v=Jl3DzjQQIIE" class="content-link">Video bài giảng</a>
+                                <a href="#" class="content-link">Bảng viết tay</a>
+                                <a href="#" class="content-link">Bài tập</a>
+                            </div>
+                        </div>
+                        <div class="curriculum-subcontent">
+                            <h4 class="subcontent-title">🧪 Lipid - Chất béo</h4>
+                            <div class="content-links">
+                                <a href="#" class="content-link">Video bài giảng</a>
+                                <a href="#" class="content-link">Tài liệu</a>
+                                <a href="#" class="content-link">Đề bài tập</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Other Chapters -->
+                <details class="curriculum-item">
+                    <summary class="curriculum-header">
+                        <span class="curriculum-title">Chương 2: Carbohydrate</span>
+                        <span class="curriculum-icon">▼</span>
+                    </summary>
+                    <div class="curriculum-content">
+                        <div class="curriculum-subcontent">
+                            <p style="color: #7f8c8d; font-style: italic;">Nội dung đang được cập nhật...</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="curriculum-item">
+                    <summary class="curriculum-header">
+                        <span class="curriculum-title">Chương 5: Pin điện và điện phân</span>
+                        <span class="curriculum-icon">▼</span>
+                    </summary>
+                    <div class="curriculum-content">
+                        <div class="curriculum-subcontent">
+                            <h4 class="subcontent-title">⚡ Pin điện hóa</h4>
+                            <div class="content-links">
+                                <a href="#" class="content-link">Lý thuyết</a>
+                                <a href="#" class="content-link">Bài tập</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Review Section -->
+        <section id="section3" class="course-section" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+            <h2 class="section-title" style="color: #2c3e50;">Tổng ôn thi</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-icon">🧪</div>
+                    <h3 class="course-title">Tổng ôn Hóa hữu cơ - Lần 1</h3>
+                    <p class="course-description">Bài kiểm tra tổng hợp kiến thức hóa hữu cơ với đầy đủ lý thuyết và bài tập.</p>
+                    <div class="course-buttons">
+                        <a href="#" class="course-btn course-btn-primary">Đề bài</a>
+                        <a href="https://www.youtube.com/watch?v=xccb_uVx1sk" class="course-btn course-btn-secondary">Video</a>
+                        <a href="#" class="course-btn course-btn-secondary">Đáp án</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">⚗️</div>
+                    <h3 class="course-title">Tổng ôn Hóa hữu cơ - Lần 2</h3>
+                    <p class="course-description">Tiếp tục củng cố và nâng cao kiến thức hóa hữu cơ với các bài tập nâng cao.</p>
+                </div>
+            </section>
+    </div>
+</body>
+</html> 
